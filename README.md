@@ -1,8 +1,6 @@
 # Uniswap Trading Bot
 
-Please fork the code to a private repo owned by you and share it with us only ;)
-
-Build a Uniswap trading bot that will sell ETH to DAI at predefined target prices.
+Uniswap trading bot that will sell ETH to DAI at predefined target prices.
 
 The bot will read the target prices from a JSON file that looks like this:
 
@@ -25,10 +23,6 @@ target-prices.json:
 ```
 
 The bot will listen to price changes on a block by block basis and execute the trade when target prices are met.
-
-Optional: The results of the trade (datetime, from, to, fromAmount, targetAmount, receivedAmount) should be saved to a DB (SQL/noSQL).
-
-Optional: The results of the trade should be accessible using a URL (GET URL/trades).
 
 The Uniswap SDK can be used https://uniswap.org/docs/v2/SDK/getting-started/ to retrieve the prices.
 
@@ -61,5 +55,5 @@ interface IUniswapRouter {
 
 Notes:
 
-- ETH should be expressed in decimals (or Wei), 1 ETH = 1e18 Wei (or 10^18). The same applies to DAI.
-- ETH should be represented by the address 0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE
+- ETH is expressed in decimals (or Wei), 1 ETH = 1e18 Wei (or 10^18). The same applies to DAI.
+- ETH is represented by the address 0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE
